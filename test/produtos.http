@@ -1,0 +1,20 @@
+// Buscar produtos
+GET http://localhost:5005/produtos
+
+###
+
+// Criar um produto
+POST http://localhost:5005/produto
+Content-Type: application/json
+
+{
+    "id": 234,
+    "nome": "Produto 2",
+    "preco": 350,
+    "off": 17
+}
+
+###
+
+// Buscar produto por id
+GET http://localhost:5005/produto/123
