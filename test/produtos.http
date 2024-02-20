@@ -8,13 +8,39 @@ POST http://localhost:5005/produto
 Content-Type: application/json
 
 {
-    "id": 234,
-    "nome": "Produto 2",
-    "preco": 350,
-    "off": 17
+    "id": 22,
+    "nome": "Produto 12",
+    "preco": 4545,
+    "off": 85
 }
 
 ###
 
 // Buscar produto por id
-GET http://localhost:5005/produto/123
+GET http://localhost:5005/produto/22
+
+###
+
+PATCH http://localhost:5005/produto/22
+Content-Type: application/json
+
+{
+    "id": 22,
+    "nome": "Produto 11 Atual"
+}
+
+###
+
+PUT http://localhost:5005/produto/22
+Content-Type: application/json
+
+{
+    "id": 22,
+    "nome": "Produto 12 Atualizado",
+     "preco": 5678,
+    "off": 90
+}
+
+###
+
+DELETE http://localhost:5005/produto
