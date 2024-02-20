@@ -61,7 +61,6 @@ export const produtoService = {
   removerTodos: (req, res) => {
     
     return produtos = [];
-
   },
 
   removeProdutoId: (req, res) => {
